@@ -2,7 +2,11 @@
 ## An Introduction to Code Magic (programming)
 ### Begin your journey into the world of Code Magic a new Apprentice Code Wizard. Learn to harness the powers of Code Magic.
 
-# Access the tutorial at https://make.sc/code-wizard-tutorial
+#### Beginners: 
+Access the tutorial at https://make.sc/code-wizard-tutorial to complete it entirely online and in the browser.
+
+#### Intermediate/Advanced:
+Clone this repo to your personal GitHub account and make changes there.
 
 ## Directions
 In this tutorial you will build up your comfort working with the basic building blocks of programming.
