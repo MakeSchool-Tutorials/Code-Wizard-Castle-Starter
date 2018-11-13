@@ -128,7 +128,7 @@ broom = {
   y: 350,
 }
 ```
-- Inside of `draw()`, add `drawScroll();` and `drawPet();`
+- Inside of `draw()`, add `drawScroll();` and `drawBroom();`
 - Adjust the values so that the `magicScroll` is on the desk in the study, and the broom is by the fireplace in the kitchen.
 
 ### Step 4 - Adding Movement
@@ -144,7 +144,7 @@ But let's give you a little more control - instead of the `wizard` walking all o
 
 - At the end of `sketch.js`, *after* the end of the `draw()` function, add:
 ```
-function updateWizardPostion() {
+function updateWizardPosition() {
   if (keyIsDown(SHIFT)) {
     wizard.updatePosition();
   }
@@ -152,9 +152,11 @@ function updateWizardPostion() {
 ```
 This function has a small `if` statement that checks if the `SHIFT` key is currently being pressed, and if the answer is yes, or `true`, then it will call `wizard.updatePosition();`
 
-- Back up in `draw()`, remove `wizard.updatePosition();` and replace it with a call to your new function: `updateWizardPostion();`
+- Back up in `draw()`, remove `wizard.updatePosition();` and replace it with a call to your new function: `updateWizardPosition();`
 
 Now, your `wizard` should only walk towards the mouse when you are pressing the `SHIFT` button.
+
+NOTE: Be sure to click onto the canvas first, otherwise the key press won't be correctly captured and your wizard won't walk.
 
 Let's get your pet moving now too.
 
